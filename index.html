@@ -1,1 +1,64 @@
-Hallo
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>195046 Kuizu Time</title>
+		<link rel="stylesheet" href="style.css" >
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	</head>
+	
+	<body>
+		<h2>クイズ</h2>		
+		<div id="app">
+		<h3>問1 aaaaaaaaaaaaaaaaaaaaaa</h3>
+            <label><input type="checkbox" v-model="myVisible1">問1の答えを表示する</label>
+            <p v-if="myVisible1">A.プログラミング演習1</p>
+        <h3>問2</h3>
+            <label><input type="checkbox" v-model="myVisible2">問2の答えを表示する</label>
+            <p v-if="myVisible2">A.プログラミング演習2</p>
+        <h3>問3</h3>
+            <label><input type="checkbox" v-model="myVisible3">問3の答えを表示する</label>
+            <p v-if="myVisible3">A.プログラミング演習3</p>
+		<h3>問4</h3>
+            <label><input type="checkbox" v-model="myVisible4">問4の答えを表示する</label>
+            <p v-if="myVisible4">A.プログラミング演習4</p>
+        <h3>問5</h3>
+            <label><input type="checkbox" v-model="myVisible5">問5の答えを表示する</label>
+            <p v-if="myVisible5">A.プログラミング演習5</p>
+        <h3>問6</h3>
+            <label><input type="checkbox" v-model="myVisible6">問6の答えを表示する</label>
+            <p v-if="myVisible6">A.プログラミング演習6</p>
+        <h3>問7</h3>
+            <label><input type="checkbox" v-model="myVisible7">問7の答えを表示する</label>
+            <p v-if="myVisible7">A.プログラミング演習7</p>
+		<h3>問8</h3>
+            <label><input type="checkbox" v-model="myVisible8">問8の答えを表示する</label>
+            <p v-if="myVisible8">A.プログラミング演習8</p>
+        <h3>問9</h3>
+            <label><input type="checkbox" v-model="myVisible9">問9の答えを表示する</label>
+            <p v-if="myVisible9">A.プログラミング演習9/p>
+        <h3>問10</h3>
+            <label><input type="checkbox" v-model="myVisible10">問10の答えを表示する</label>
+            <p v-if="myVisible10">A.プログラミング演習10</p>
+		</div>
+
+		<script>
+			new Vue({
+				el: '#app',
+				data: {
+					myVisible1: false,
+                    myVisible2: false,
+                    myVisible3: false,
+					myVisible4: false,
+                    myVisible5: false,
+                    myVisible6: false,
+                    myVisible7: false,
+					myVisible8: false,
+                    myVisible9: false,
+                    myVisible10: false
+				}
+			})
+		</script>
+    </body>
+    
+</html>
