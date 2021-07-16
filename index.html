@@ -8,39 +8,59 @@
 	</head>
 	
 	<body>
-		<h2>クイズ</h2>		
+        <h2>暇つぶし</h2>
+		<h1>クラスorグラス・クイズ</h1>		
 		<div id="app">
-		<h3>問1 aaaaaaaaaaaaaaaaaaaaaa</h3>
+		<h3>問1 学校で用いられる多人数のまとまり。学級、組とも呼ばれる。</h3>
             <label><input type="checkbox" v-model="myVisible1">問1の答えを表示する</label>
-            <p v-if="myVisible1">A.プログラミング演習1</p>
-        <h3>問2</h3>
+            <p v-if="myVisible1">A.クラス</p>
+        <h3>問2 主に飲み物やアイスクリームを入れる、ガラス製の食器。</h3>
             <label><input type="checkbox" v-model="myVisible2">問2の答えを表示する</label>
-            <p v-if="myVisible2">A.プログラミング演習2</p>
-        <h3>問3</h3>
+            <p v-if="myVisible2">A.グラス</p>
+        <h3>問3 召喚された英霊たちの区分。セイバー、アーチャー、ランサーなどの種類がある。</h3>
             <label><input type="checkbox" v-model="myVisible3">問3の答えを表示する</label>
-            <p v-if="myVisible3">A.プログラミング演習3</p>
-		<h3>問4</h3>
+            <p v-if="myVisible3">A.クラス</p>
+		<h3>問4 主に集団感染を指して用いられる言葉。○○○ター。</h3>
             <label><input type="checkbox" v-model="myVisible4">問4の答えを表示する</label>
-            <p v-if="myVisible4">A.プログラミング演習4</p>
-        <h3>問5</h3>
+            <p v-if="myVisible4">A.クラスター</p>
+        <h3>問5 史上二頭目のグランプリ三連覇を達成した競走馬。○○○ワンダー。</h3>
             <label><input type="checkbox" v-model="myVisible5">問5の答えを表示する</label>
-            <p v-if="myVisible5">A.プログラミング演習5</p>
-        <h3>問6</h3>
+            <p v-if="myVisible5">A.グラスワンダー</p>
+        <h3>問6 花言葉が　私を信じて　バニーテール　はずむ心　の花。ラ○○○。</h3>
             <label><input type="checkbox" v-model="myVisible6">問6の答えを表示する</label>
-            <p v-if="myVisible6">A.プログラミング演習6</p>
-        <h3>問7</h3>
+            <p v-if="myVisible6">A.ラグラス</p>
+        <h3>問7 月日を過ごす、生活すること。</h3>
             <label><input type="checkbox" v-model="myVisible7">問7の答えを表示する</label>
-            <p v-if="myVisible7">A.プログラミング演習7</p>
-		<h3>問8</h3>
+            <p v-if="myVisible7">A.暮らす</p>
+        <h3>問8 鎧の孤島で覚えられる、草タイプの条件付き先制技。○○○スライダー。</h3>
             <label><input type="checkbox" v-model="myVisible8">問8の答えを表示する</label>
-            <p v-if="myVisible8">A.プログラミング演習8</p>
-        <h3>問9</h3>
+            <p v-if="myVisible8">A.グラススライダー</p>
+		<h3>問9 人を脅すときなどに使われる、福岡の方言。</h3>
             <label><input type="checkbox" v-model="myVisible9">問9の答えを表示する</label>
-            <p v-if="myVisible9">A.プログラミング演習9/p>
-        <h3>問10</h3>
+            <p v-if="myVisible9">A.くらす</p>
+        <h3>問10 主にネットで用いられる、熱狂的ファンのことを指す言葉。○○○タ。</h3>
             <label><input type="checkbox" v-model="myVisible10">問10の答えを表示する</label>
-            <p v-if="myVisible10">A.プログラミング演習10</p>
-		</div>
+            <p v-if="myVisible10">A.クラスタ</p>
+        <h3>問11 モルディブにあるアリ環礁の島。ラ○○○島。</h3>
+            <label><input type="checkbox" v-model="myVisible11">問11の答えを表示する</label>
+            <p v-if="myVisible11">A.ラクラス</p>
+        <h3>問12 強い太陽光線などを防ぐために色ガラスを使ったメガネ。サン○○○。</h3>
+            <label><input type="checkbox" v-model="myVisible12">問12の答えを表示する</label>
+            <p v-if="myVisible12">A.サングラス</p>
+        <h3>問13 バッタを英語訳する。○○○ホッパー。</h3>
+            <label><input type="checkbox" v-model="myVisible13">問13の答えを表示する</label>
+            <p v-if="myVisible13">A.グラスホッパー</p>
+        <h3>問14 水文明、マナコスト4でパワー1000のシールドトリガー付きブロッカー。ハンター・○○○ター。</h3>
+            <label><input type="checkbox" v-model="myVisible14">問14の答えを表示する</label>
+            <p v-if="myVisible14">A.ハンター・クラスター</p>
+        <h3>問15 オブジェクト指向プログラミングにおける設計図あるいはひな形に相当するもの。</h3>
+            <label><input type="checkbox" v-model="myVisible15">問15の答えを表示する</label>
+            <p v-if="myVisible15">A.クラス</p>
+            <h2>＜正答数チェッカー＞</h2>
+        <p>{{ count }}</p> 
+			<button v-on:click="countUp(1)">1増やす</button>
+			<button v-on:click="countDown(1)">1減らす</button>
+        </div>
 
 		<script>
 			new Vue({
@@ -55,7 +75,22 @@
                     myVisible7: false,
 					myVisible8: false,
                     myVisible9: false,
-                    myVisible10: false
+                    myVisible10: false,
+                    myVisible11: false,
+                    myVisible12: false,
+                    myVisible13: false,
+                    myVisible14: false,
+                    myVisible15: false,
+					count:0
+				},
+				methods: {
+					countUp: function(value) {
+						this.count += value;
+					},
+                                        countDown: function(value) {
+						this.count -= value;
+					},
+
 				}
 			})
 		</script>
